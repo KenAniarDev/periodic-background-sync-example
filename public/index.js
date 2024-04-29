@@ -16,7 +16,7 @@ const setLastFetchedDate = (formattedTime) => {
 };
 
 const fetchNews = async () => {
-  const url = `http://newsapi.org/v2/everything?q=bitcoin&sortBy=publishedAt&apiKey=${apiKeyNews}`;
+  const url = `https://newsapi.org/v2/everything?q=bitcoin&sortBy=publishedAt&apiKey=${apiKeyNews}`;
   const response = await fetch(url);
   return response.json();
 };
